@@ -547,20 +547,16 @@ function showFinalResult() {
     let details = '';
 
     if (percentage === 100) {
-        emoji = '🎊✨🌟';
         message = `¡PERFECTO! Obtuviste ${correctCount}/5 respuestas correctas`;
         details = `<p class="result-correct">¡Increíble! ¡Lo hiciste perfecto! 🎉 Tu inteligencia y dedicación me fascina. Eres brillante y tengo todo el orgullo del mundo en ti. Con esa dedicación, serás una administradora extraordinaria. ¡Te amo mucho! 💕✨</p>`;
         createConfettiExplosion();
     } else if (percentage === 80) {
-        emoji = '🌟💫⭐';
         message = `¡Excelente! Obtuviste ${correctCount}/5 respuestas correctas`;
         details = `<p class="result-correct">¡Muy bien hecho! Estoy orgulloso de tu esfuerzo. Solo una pregunta no fue, pero eso es increíble. Eres muy inteligente y capaz. ¡Sigue así! 🚀💕</p>`;
     } else if (percentage >= 60) {
-        emoji = '💕🌸💖';
         message = `¡Buen trabajo! Obtuviste ${correctCount}/5 respuestas correctas`;
         details = `<p class="result-incorrect">¡Muy bien por intentarlo! Cada respuesta que acertaste te acerca a tus metas. No importa los errores, lo importante es que aprendes. Tú tienes potencial ilimitado. ¡Adelante! 💪🌟</p>`;
     } else {
-        emoji = '💖🌸💖';
         message = `¡Empezaste bien! Obtuviste ${correctCount}/5 respuestas correctas`;
         details = `<p class="result-incorrect">Cada intento es un aprendizaje. No te desanimes, eres una persona inteligente y capaz. Los grandes profesionales empezaron así. Creo en ti. ¡Vamos, tú puedes lograrlo! 💕✨</p>`;
     }
