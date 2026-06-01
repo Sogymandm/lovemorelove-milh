@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARA TI ISABEL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Romántico -->
+    <header class="header">
+        <div class="header-content">
+            <div class="heart-decoration"></div>
+            <h1 class="title">💖 PARA TI ISABEL 💕</h1>
+            <p class="subtitle">💖 Te amo 💕</p>
+            <p class="tagline">⭐ Espero te guste, me nació crear esta página para expresar lo que siento por ti. ⭐</p>
+        </div>
+    </header>
+
+    <!-- Contenedor Principal -->
+    <main class="container">
+        <!-- Galería de Cartas -->
+        <section class="gallery">
+            <!-- Carta 1: Mensaje Especial -->
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-icon">💕</div>
+                    <h3>Mi Amor</h3>
+                    <p class="card-hint">Toca para leer...</p>
+                </div>
+                <div class="card-back">
+                    <button class="close-btn">&times;</button>
+                    <h3>Mi Amor</h3>
+                    <p>Quería decirte que cada día contigo es un regalo especial. Tu sonrisa ilumina mi día y tu presencia llena mi corazón de alegría.</p>
+                </div>
+            </div>
+
+            <!-- Carta 2: Promesa -->
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-icon">🌹</div>
+                    <h3>Mi Promesa</h3>
+                    <p class="card-hint">Toca para leer...</p>
+                </div>
+                <div class="card-back">
+                    <button class="close-btn">&times;</button>
+                    <h3>Mi Promesa</h3>
+                    <p>Aprovecharé la oportunidad que me diste, haré todo, deseo estar contigo. Te amo demasiado y mi promesa es estar a tu lado siempre.</p>
+                </div>
+            </div>
+
+            <!-- Carta 3: Agradecimiento -->
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-icon">⭐</div>
+                    <h3>Gracias</h3>
+                    <p class="card-hint">Toca para leer...</p>
+                </div>
+                <div class="card-back">
+                    <button class="close-btn">&times;</button>
+                    <h3>Gracias</h3>
+                    <p>Gracias por ser tú, por creer en mí, por apoyarme en cada paso. Gracias por los abrazo, los besos y todas esas cosas pequeñas que hacen especial cada día. Eres mi persona favorita y muy especial para mi.</p>
+                </div>
+            </div>
+
+            <!-- Carta 4: Sueños Compartidos -->
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-icon">🌙</div>
+                    <h3>Sueños</h3>
+                    <p class="card-hint">Toca para leer...</p>
+                </div>
+                <div class="card-back">
+                    <button class="close-btn">&times;</button>
+                    <h3>Sueños</h3>
+                    <p>Sueño con un futuro a tu lado. Deseo viajes, risas, momentos en la lluvia, atardeceres juntos. Cada sueño es más bonito cuando pienso que estarás allí conmigo.</p>
+                </div>
+            </div>
+
+            <!-- Carta 5: Detalles que Amo -->
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-icon">💖</div>
+                    <h3>Detalles que Amo</h3>
+                    <p class="card-hint">Toca para leer...</p>
+                </div>
+                <div class="card-back">
+                    <button class="close-btn">&times;</button>
+                    <h3>Detalles que Amo</h3>
+                    <p>Amo tu sonrisa, tu risa, la forma en que miras las cosas. Amo cuando me abrazabas, cuando me apoyas. Amo cada cosa de ti, pequeña y grande.</p>
+                </div>
+            </div>
+
+            <!-- Carta 6: Eternidad -->
+            <div class="card">
+                <div class="card-front">
+                    <div class="card-icon">🔥</div>
+                    <h3>Por Siempre</h3>
+                    <p class="card-hint">Toca para leer...</p>
+                </div>
+                <div class="card-back">
+                    <button class="close-btn">&times;</button>
+                    <h3>Por Siempre</h3>
+                    <p>Te amo hoy, mañana y siempre. No importa qué pase, mi corazón siempre será tuyo. Eres mi amor, mi vida, mi persona especial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Cuestionario -->
+        <section class="quiz-section">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <h2 class="quiz-title">✨ UN CUESTIONARIO PEQUEÑO ✨</h2>
+                    <p class="quiz-subtitle">Añadí esto porque pensé que sería divertido y dinamico en la página para ti.</p>
+                </div>
+
+                <!-- Preguntas -->
+                <div class="quiz-questions" id="quizQuestions">
+                    <!-- Las preguntas se generarán dinámicamente con JavaScript -->
+                </div>
+
+                <!-- Resultado -->
+                <div class="quiz-result" id="quizResult">
+                    <div class="result-content">
+                        <div class="result-message" id="resultMessage"></div>
+                        <div class="result-details" id="resultDetails"></div>
+                        <div class="result-buttons">
+                            <button class="reset-btn" onclick="location.reload()">🔄 Reintentar Quiz</button>
+                            <button class="back-btn" onclick="scrollToCards()">❤️ Volver a las Cartas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barra de Progreso -->
+                <div class="quiz-progress">
+                    <div class="progress-text">Preguntas contestadas: <span id="answeredCount">0</span>/6</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>💌 Hecho con todo mi amor para ti - De - Joan Sebastián Álvarez Díaz - Para - Maria Isabel Largacha Hinestroza 💌</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
