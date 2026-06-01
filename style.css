@@ -8,7 +8,7 @@
     --color-text: #3a2f35;         /* Texto oscuro */
     --color-shadow: rgba(255, 23, 68, 0.15);
     --transition: all 0.3s ease-out;
-    --font-elegant: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-elegant: 'Fredoka', sans-serif;
 }
 
 * {
